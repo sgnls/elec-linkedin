@@ -1,2 +1,1 @@
-# elec-linkedin
-Electron : LinkedIn
+# Electron : LinkedIn

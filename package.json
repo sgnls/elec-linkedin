@@ -1,0 +1,52 @@
+{
+  "name": "elec-linkedin",
+  "version": "0.0.1",
+  "description": "Electron : LinkedIn",
+  "homepage": "https://github.com/sgnls/elec-linkedin",
+  "keywords": [
+    "Twitter"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/sgnls/elec-linkedin.git"
+  },
+  "author": "Matt Hill <desk@sgnls.net>",
+  "license": "SEE LICENSE IN LICENSE.md",
+  "scripts": {
+    "start": "electron ./app",
+    "start-debug": "WEB_DEBUG=1 electron --disable-http-cache ./app",
+    "pack": "build --dir",
+    "dist": "build"
+  },
+  "devDependencies": {
+    "electron": "^1.4.15",
+    "electron-builder": "^13.11.1"
+  },
+  "build": {
+    "appId": "elec-linkedin",
+    "asar": false,
+    "linux": {
+      "category": "Network;Chat;Social",
+      "packageCategory": "net",
+      "executableName": "linkedin",
+      "synopsis": "LinkedIn (Electron)",
+      "description": "LinkedIn for Linux via Electron.",
+      "desktop": {
+        "Name": "LinkedIn",
+        "Comment": "LinkedIn for Linux via Electron.",
+        "StartupWMClass": "linkedin"
+      },
+      "target": [
+        "tar.gz",
+        "deb",
+        "rpm",
+        "pacman"
+      ]
+    }
+  },
+  "dependencies": {},
+  "bugs": {
+    "url": "https://github.com/sgnls/elec-linkedin/issues"
+  },
+  "main": "index.js"
+}
